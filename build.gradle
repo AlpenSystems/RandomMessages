@@ -4,7 +4,7 @@ plugins {
     id'com.github.johnrengelman.shadow' version '4.0.4'
 }
 
-mainClassName = 'com.example.jda.Bot'
+mainClassName = 'at.AlpenSystems.RandomMessages.core.Main'
 
 version '1.0'
 
@@ -17,6 +17,7 @@ repositories {
 dependencies {
     implementation group: 'net.dv8tion', name: 'JDA', version: '4.2.0_191'
     implementation group: 'com.jagrosh', name: 'jda-utilities', version: '3.0.4'
+    implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.1.1'
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
 }
 

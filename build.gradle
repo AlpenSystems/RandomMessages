@@ -1,14 +1,23 @@
 plugins {
-    id 'java'
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '4.0.4'
 }
 
-group 'at.AlpenSystems'
+mainClassName = 'com.example.jda.Bot'
+
 version '1.0'
 
+sourceCompatibility = 1.8
+
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'net.dv8tion', name: 'JDA', version: '4.2.0_191'
+    implementation group: 'com.jagrosh', name: 'jda-utilities', version: '3.0.4'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
 }
+
+compileJava.options.encoding = 'UTF-8'

@@ -18,4 +18,10 @@ hs_err_pid*
 
 # IntelliJ .idea#
 .idea
+
+# Gradle .gradle#
+.gradle
+
+# OTHERS #
 *.iml
+*.lock

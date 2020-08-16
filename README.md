@@ -9,3 +9,13 @@
 
 ## Download
 Go to the [Releases](https://github.com/AlpenSystems/RandomMessages/releases) to download the lastest .jar.
+
+
+## Do you like our bot? :heart:
+Support us by joining our __[Discord](https://discord.gg/RsFEUzv)__. :star: <br>
+Also help us by creating __[issues](https://github.com/AlpenSystems/RandomMessages/issues)__. 😎
+
+# License
+```xml
+   https://www.mozilla.org/en-US/MPL/2.0/
+```

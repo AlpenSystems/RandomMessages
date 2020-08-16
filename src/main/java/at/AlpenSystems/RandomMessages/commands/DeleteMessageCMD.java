@@ -31,7 +31,6 @@ public class DeleteMessageCMD extends ListenerAdapter {
                         if (msg.getContentRaw().length() >= 6) {
                             try {
                                 int msgID = Integer.parseInt(msg.getContentRaw().substring(5));
-                                System.out.println(msgID);
                                 dbStatement.deleteMessage(serverid, msgID);
                                 channel.sendMessage(":white_check_mark: Entry successfully added to the database!").queue();
                             } catch (Exception e) {

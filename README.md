@@ -8,7 +8,7 @@
 </p>
 
 ## Download
-Go to the [Releases](https://github.com/AlpenSystems/RandomMessages/releases) to download the lastest .jar.
+Go to [Releases](https://github.com/AlpenSystems/RandomMessages/releases) to download the lastest .jar.
 
 
 ## Do you like our bot? :heart:

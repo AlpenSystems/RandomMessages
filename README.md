@@ -4,9 +4,9 @@
 </br>
 </br>
 <p align="center">
-  <a href="https://opensource.org/licenses/MPL-2.0"><img alt="License" src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg"/></a>
-  <a href="https://github.com/DV8FromTheWorld/JDA"><img alt="License" src="https://img.shields.io/badge/JDA-4.2.0__191-brightgreen.svg"/></a>
-  <a href="https://github.com/AlpenSystems/RandomMessages/releases"><img alt="License" src="https://img.shields.io/badge/Download-.jar-brightgreen.svg"/></a>
+  <a href="https://opensource.org/licenses/MPL-2.0"><img alt="License" src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg?style=flat-square&logo=appveyor"/></a>
+  <a href="https://github.com/DV8FromTheWorld/JDA"><img alt="License" src="https://img.shields.io/badge/JDA-4.2.0__191-brightgreen.svg?style=flat-square&logo=appveyor"/></a>
+  <a href="https://github.com/AlpenSystems/RandomMessages/releases"><img alt="License" src="https://img.shields.io/badge/Download-.jar-brightgreen.svg?style=flat-square&logo=appveyor"/></a>
 </p>
 
 ## Download

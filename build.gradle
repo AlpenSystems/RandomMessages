@@ -1,14 +1,14 @@
 plugins {
     id'java'
     id'application'
-    id'com.github.johnrengelman.shadow' version '4.0.4'
+    id'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
-mainClassName = 'at.AlpenSystems.RandomMessages.core.Main'
-
+group 'org.example'
 version '1.0'
 
-sourceCompatibility = 1.8
+mainClassName = 'at.AlpenSystems.RandomMessages.core.Main'
+sourceCompatibility = JavaVersion.VERSION_14
 
 repositories {
     jcenter()
@@ -22,3 +22,5 @@ dependencies {
 }
 
 compileJava.options.encoding = 'UTF-8'
+
+wrapper { gradleVersion = '6.6' }

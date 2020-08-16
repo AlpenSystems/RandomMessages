@@ -32,7 +32,9 @@ public class OnMessage extends ListenerAdapter implements EventListener {
                             dbMSG = dbStatement.getMessage(serverid);
                             TextChannel textChannel = event.getGuild().getTextChannelById(dbStatement.getActionChannel(serverid));
                             if (textChannel != null) {
-                                textChannel.sendMessage(dbMSG).queue();
+                                if(!dbMSG.isEmpty()) {
+                                    textChannel.sendMessage(dbMSG).queue();
+                                }
                             } else {
                                 System.out.println("Error getting the channel!");
                             }

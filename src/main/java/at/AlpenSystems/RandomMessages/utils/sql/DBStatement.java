@@ -3,11 +3,12 @@
  * @author David-H-Dev
  *
  * last changes:
- * @date 15.08.2020
+ * @date 19.08.2020
  */
 
 package at.AlpenSystems.RandomMessages.utils.sql;
 
+import de.vandermeer.asciitable.AsciiTable;
 import net.dv8tion.jda.api.entities.MessageChannel;
 
 import java.sql.*;
@@ -242,12 +243,19 @@ public class DBStatement {
             String sql = "SELECT ID, message FROM `" + TABLE_SERVER_NAME + "`;";
             try (PreparedStatement stmt = conn.prepareStatement(sql);
                  ResultSet rs = stmt.executeQuery()) {
+                AsciiTable at = new AsciiTable();
+                at.addRule();
+                at.addRow("ID", "Messages");
                 while (rs.next()) {
                     int i = 0;
                     messages.add(i, rs.getString("message"));
                     numbers.add(i, rs.getInt("ID"));
-                    msgChannel.sendMessage(numbers.get(i) + ": " + messages.get(i)).queue();
+                    at.addRule();
+                    at.addRow(numbers.get(i),  messages.get(i));
                 }
+                at.addRule();
+                String rend = at.render();
+                msgChannel.sendMessage("```" + rend + "```").queue();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
